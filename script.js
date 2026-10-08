@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ----------------------------------------------------
-     5. Email Quick Copy & Toast
+     5. Email Quick Copy & CV Download Toast
      ---------------------------------------------------- */
   window.showToast = function(message) {
     if (!toastNotification) return;
@@ -224,6 +224,13 @@ document.addEventListener('DOMContentLoaded', () => {
       toastNotification.classList.remove('show');
     }, 3200);
   };
+
+  const downloadCvBtn = document.getElementById('downloadCvBtn');
+  if (downloadCvBtn) {
+    downloadCvBtn.addEventListener('click', () => {
+      showToast('Downloading Christina Perera CV! 💜✨');
+    });
+  }
 
   if (emailCard) {
     emailCard.addEventListener('click', (e) => {
@@ -260,6 +267,38 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('mobile-open');
+      });
+    });
+  }
+
+  /* ----------------------------------------------------
+     7. Projects Filter Tabs Interactivity
+     ---------------------------------------------------- */
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const projectCards = document.querySelectorAll('.project-clean-card');
+
+  if (filterTabs.length > 0 && projectCards.length > 0) {
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        filterTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        const filter = tab.dataset.filter;
+
+        projectCards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.classList.remove('card-hidden');
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(12px)';
+            setTimeout(() => {
+              card.style.transition = 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)';
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
+            }, 30);
+          } else {
+            card.classList.add('card-hidden');
+          }
+        });
       });
     });
   }

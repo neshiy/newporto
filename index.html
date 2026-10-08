@@ -244,6 +244,15 @@
               <span class="mini-tag"><i class="fa-solid fa-palette"></i> Visual Design</span>
               <span class="mini-tag"><i class="fa-solid fa-chart-pie"></i> Data Analytics</span>
             </div>
+
+            <!-- Download CV Button -->
+            <div class="hero-cv-box">
+              <a href="assets/Christina_Perera_CV.pdf" download="Christina_Perera_CV.pdf" class="btn-download-cv" id="downloadCvBtn">
+                <span class="cv-btn-icon"><i class="fa-solid fa-download"></i></span>
+                <span class="cv-btn-text">Download CV</span>
+                <span class="cv-sparkle">✦</span>
+              </a>
+            </div>
           </div>
 
         </div>
@@ -281,33 +290,6 @@
               <i class="fa-solid fa-quote-left quote-mark"></i>
               My process is simple: <em>understand the user, design intentionally, analyze rigorously, and implement thoughtfully</em> to create digital solutions that leave a lasting impact.
             </p>
-
-            <!-- 3 Positions Highlights -->
-            <div class="about-positions-grid">
-              <div class="position-item">
-                <div class="position-icon swe-icon"><i class="fa-solid fa-code"></i></div>
-                <div class="position-details">
-                  <h4>Software Engineer</h4>
-                  <span>Clean architecture, modern frameworks &amp; responsive web apps</span>
-                </div>
-              </div>
-
-              <div class="position-item">
-                <div class="position-icon vd-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-                <div class="position-details">
-                  <h4>Visual Designer</h4>
-                  <span>UI/UX, pastel aesthetics, wireframes &amp; design systems</span>
-                </div>
-              </div>
-
-              <div class="position-item">
-                <div class="position-icon da-icon"><i class="fa-solid fa-chart-line"></i></div>
-                <div class="position-details">
-                  <h4>Data Analyst</h4>
-                  <span>Data modeling, trend analysis &amp; actionable visualizations</span>
-                </div>
-              </div>
-            </div>
 
           </div>
 
@@ -362,112 +344,400 @@
 
     <!-- ======================================================== -->
     <!-- EXPERIENCE SECTION                                       -->
+    <!-- Left: Online Certificates                                -->
+    <!-- Right: Experience in a Line                              -->
     <!-- ======================================================== -->
     <section class="content-section" id="experience">
       <div class="section-container">
-        <div class="section-badge"><span>✦ My Journey ✦</span></div>
-        <h2 class="section-title">Experience &amp; Milestones</h2>
+        <div class="section-badge"><span>✦ Credentials &amp; Journey ✦</span></div>
+        <h2 class="section-title">Certifications &amp; Experience</h2>
 
-        <div class="timeline">
-          <div class="timeline-item glass-panel">
-            <div class="timeline-dot"></div>
-            <div class="timeline-header">
-              <span class="timeline-role">Lead Frontend Designer &amp; Developer</span>
-              <span class="timeline-date">2024 - Present</span>
+        <div class="experience-two-col-layout">
+          
+          <!-- LEFT SIDE: Online Certificate Cards -->
+          <div class="certs-left-col">
+            <div class="sub-col-header">
+              <span class="sub-col-icon cert-badge-icon"><i class="fa-solid fa-certificate"></i></span>
+              <h3 class="sub-col-title">Online Certifications</h3>
             </div>
-            <div class="timeline-company">Creative Studio</div>
-            <p>Architecting user experiences, designing whimsical branding systems, and building high-performance web products.</p>
+
+            <div class="certs-cards-list">
+
+              <!-- Certificate 1: Meta Full-Stack / Frontend -->
+              <div class="cert-card glass-panel">
+                <div class="cert-card-top">
+                  <div class="cert-issuer-badge meta-badge">
+                    <i class="fa-brands fa-meta"></i> Meta
+                  </div>
+                  <span class="cert-date">2024</span>
+                </div>
+                <h4 class="cert-title">Full-Stack &amp; Frontend Professional</h4>
+                <p class="cert-org">Meta Verified Specialization • Coursera</p>
+                <div class="cert-skills">
+                  <span>React.js</span>
+                  <span>JavaScript ES6+</span>
+                  <span>UI Engineering</span>
+                  <span>APIs</span>
+                </div>
+                <div class="cert-footer">
+                  <span class="cert-id"><i class="fa-solid fa-shield-halved"></i> ID: META-FE-9842</span>
+                  <a href="#experience" class="cert-verify-link">
+                    Verified <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Certificate 2: Google Data Analytics -->
+              <div class="cert-card glass-panel">
+                <div class="cert-card-top">
+                  <div class="cert-issuer-badge google-badge">
+                    <i class="fa-brands fa-google"></i> Google
+                  </div>
+                  <span class="cert-date">2023</span>
+                </div>
+                <h4 class="cert-title">Data Analytics Professional Certificate</h4>
+                <p class="cert-org">Google Career Certificates</p>
+                <div class="cert-skills">
+                  <span>SQL</span>
+                  <span>R Programming</span>
+                  <span>Tableau</span>
+                  <span>Data Cleaning</span>
+                </div>
+                <div class="cert-footer">
+                  <span class="cert-id"><i class="fa-solid fa-shield-halved"></i> ID: GOOG-DA-5531</span>
+                  <a href="#experience" class="cert-verify-link">
+                    Verified <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Certificate 3: UI/UX & Figma Systems -->
+              <div class="cert-card glass-panel">
+                <div class="cert-card-top">
+                  <div class="cert-issuer-badge figma-badge">
+                    <i class="fa-brands fa-figma"></i> CalArts / Figma
+                  </div>
+                  <span class="cert-date">2023</span>
+                </div>
+                <h4 class="cert-title">UI/UX Design Specialization &amp; Systems</h4>
+                <p class="cert-org">California Institute of the Arts</p>
+                <div class="cert-skills">
+                  <span>Figma Systems</span>
+                  <span>Wireframing</span>
+                  <span>UX Research</span>
+                  <span>Pastel UI</span>
+                </div>
+                <div class="cert-footer">
+                  <span class="cert-id"><i class="fa-solid fa-shield-halved"></i> ID: CALARTS-UX-718</span>
+                  <a href="#experience" class="cert-verify-link">
+                    Verified <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Certificate 4: AWS Cloud Practitioner -->
+              <div class="cert-card glass-panel">
+                <div class="cert-card-top">
+                  <div class="cert-issuer-badge aws-badge">
+                    <i class="fa-brands fa-aws"></i> AWS
+                  </div>
+                  <span class="cert-date">2022</span>
+                </div>
+                <h4 class="cert-title">AWS Certified Cloud Practitioner</h4>
+                <p class="cert-org">Amazon Web Services Training &amp; Certification</p>
+                <div class="cert-skills">
+                  <span>Cloud Architecture</span>
+                  <span>Serverless</span>
+                  <span>S3 &amp; Lambda</span>
+                  <span>Cloud Security</span>
+                </div>
+                <div class="cert-footer">
+                  <span class="cert-id"><i class="fa-solid fa-shield-halved"></i> ID: AWS-CP-3904</span>
+                  <a href="#experience" class="cert-verify-link">
+                    Verified <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
           </div>
 
-          <div class="timeline-item glass-panel">
-            <div class="timeline-dot"></div>
-            <div class="timeline-header">
-              <span class="timeline-role">UI/UX Designer &amp; Web Specialist</span>
-              <span class="timeline-date">2022 - 2024</span>
+          <!-- RIGHT SIDE: Experience in a Line -->
+          <div class="timeline-right-col">
+            <div class="sub-col-header">
+              <span class="sub-col-icon exp-badge-icon"><i class="fa-solid fa-briefcase"></i></span>
+              <h3 class="sub-col-title">Work Experience</h3>
             </div>
-            <div class="timeline-company">Digital Media Labs</div>
-            <p>Crafted interactive prototypes, design systems, and frontend components with focus on intuitive flows and delightful visuals.</p>
+
+            <!-- Experience Timeline in a Line -->
+            <div class="timeline-linear-wrapper">
+              <div class="timeline-vertical-line"></div>
+
+              <!-- Milestone 1 -->
+              <div class="linear-exp-item glass-panel">
+                <div class="linear-exp-marker marker-swe">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="linear-exp-content">
+                  <div class="linear-exp-top">
+                    <h4 class="linear-role">Lead Frontend Engineer &amp; UI Specialist</h4>
+                    <span class="linear-date">2024 - Present</span>
+                  </div>
+                  <div class="linear-company">Nova Creative Technologies</div>
+                  <p class="linear-desc">
+                    Architecting high-performance web applications using React, Next.js, and TypeScript. Spearheaded a company-wide pastel design system that decreased time-to-market by 35% and unified frontend engineering standards.
+                  </p>
+                  <div class="linear-tags">
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>Design Systems</span>
+                    <span>REST APIs</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Milestone 2 -->
+              <div class="linear-exp-item glass-panel">
+                <div class="linear-exp-marker marker-vd">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <div class="linear-exp-content">
+                  <div class="linear-exp-top">
+                    <h4 class="linear-role">Visual Designer &amp; Web Developer</h4>
+                    <span class="linear-date">2022 - 2024</span>
+                  </div>
+                  <div class="linear-company">Studio Lavender Digital</div>
+                  <p class="linear-desc">
+                    Bridged the divide between visual aesthetics and clean code. Designed interactive prototypes, mobile wireframes, and responsive user interfaces that improved customer retention rates by 38%.
+                  </p>
+                  <div class="linear-tags">
+                    <span>Figma</span>
+                    <span>UI/UX</span>
+                    <span>JavaScript</span>
+                    <span>CSS Grid</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Milestone 3 -->
+              <div class="linear-exp-item glass-panel">
+                <div class="linear-exp-marker marker-da">
+                  <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="linear-exp-content">
+                  <div class="linear-exp-top">
+                    <h4 class="linear-role">Junior Software Engineer &amp; Data Analyst</h4>
+                    <span class="linear-date">2021 - 2022</span>
+                  </div>
+                  <div class="linear-company">Nexus Analytics &amp; Labs</div>
+                  <p class="linear-desc">
+                    Engineered automated data ingestion workflows using Python and SQL. Built executive dashboards that visualized user journey drop-offs, driving product feature decisions.
+                  </p>
+                  <div class="linear-tags">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>Tableau</span>
+                    <span>Data Pipelines</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
 
-          <div class="timeline-item glass-panel">
-            <div class="timeline-dot"></div>
-            <div class="timeline-header">
-              <span class="timeline-role">Junior Web Developer</span>
-              <span class="timeline-date">2021 - 2022</span>
-            </div>
-            <div class="timeline-company">Tech Innovators</div>
-            <p>Maintained client web properties, implemented responsive layouts, and optimized page load performance across mobile and desktop.</p>
-          </div>
         </div>
       </div>
     </section>
 
     <!-- ======================================================== -->
-    <!-- PROJECTS SECTION                                         -->
+    <!-- PROJECTS SECTION: CLEAN AESTHETIC CARDS & FILTER TABS   -->
     <!-- ======================================================== -->
     <section class="content-section" id="projects">
       <div class="section-container">
         <div class="section-badge"><span>✦ Portfolio Showcase ✦</span></div>
         <h2 class="section-title">Featured Projects</h2>
 
-        <div class="projects-grid">
+        <!-- Category Filter Tabs -->
+        <div class="project-filter-tabs" id="projectFilterTabs">
+          <button class="filter-tab active" data-filter="all">All Projects</button>
+          <button class="filter-tab" data-filter="swe">Software Engineering</button>
+          <button class="filter-tab" data-filter="vd">Visual Design</button>
+          <button class="filter-tab" data-filter="da">Data Analytics</button>
+        </div>
+
+        <!-- 6 Clean Aesthetic Project Cards -->
+        <div class="clean-projects-grid" id="cleanProjectsGrid">
           
-          <!-- Project 1 -->
-          <div class="project-card glass-panel">
-            <div class="project-thumb project-thumb-1">
-              <div class="project-tag">UI / Web App</div>
+          <!-- Card 1: SWE -->
+          <div class="project-clean-card glass-panel" data-category="swe">
+            <div class="card-thumb-banner banner-swe">
+              <span class="thumb-badge">Full-Stack</span>
+              <div class="thumb-icon"><i class="fa-solid fa-code"></i></div>
             </div>
-            <div class="project-body">
-              <h3>Lilac Dreams Dashboard</h3>
-              <p>A minimalist pastel analytics and productivity dashboard with interactive charts, dark/light themes, and customizable widgets.</p>
-              <div class="project-stack">
+            <div class="card-clean-body">
+              <span class="card-category-label cat-swe">Software Engineering</span>
+              <h3 class="card-project-title">Lilac Cloud Platform &amp; API</h3>
+              <p class="card-project-desc">
+                Modular web platform featuring real-time WebSocket state synchronization, secure authentication, and optimized REST APIs.
+              </p>
+              <div class="card-tags-list">
                 <span>React</span>
-                <span>Tailwind</span>
-                <span>ChartJS</span>
+                <span>TypeScript</span>
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
               </div>
-              <div class="project-links">
-                <a href="#" class="project-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-                <a href="#" class="project-btn-ghost"><i class="fa-brands fa-github"></i> Code</a>
+              <div class="card-clean-footer">
+                <a href="#projects" class="card-link-btn primary-link">
+                  <span>Live Demo</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://github.com/christinaperera" target="_blank" rel="noopener noreferrer" class="card-link-btn ghost-link">
+                  <i class="fa-brands fa-github"></i> <span>Code</span>
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- Project 2 -->
-          <div class="project-card glass-panel">
-            <div class="project-thumb project-thumb-2">
-              <div class="project-tag">Game / Pixel Art</div>
+          <!-- Card 2: Visual Design -->
+          <div class="project-clean-card glass-panel" data-category="vd">
+            <div class="card-thumb-banner banner-vd">
+              <span class="thumb-badge">Design System</span>
+              <div class="thumb-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
             </div>
-            <div class="project-body">
-              <h3>Retro Pastel Arcade</h3>
-              <p>A nostalgic 8-bit web game experience with pixel soundscapes, custom canvas animations, and cute character customization.</p>
-              <div class="project-stack">
+            <div class="card-clean-body">
+              <span class="card-category-label cat-vd">Visual Design</span>
+              <h3 class="card-project-title">Pastel Symphony UI System</h3>
+              <p class="card-project-desc">
+                Comprehensive Figma design ecosystem with accessible pastel color tokens, retro pixel elements, and responsive layout grids.
+              </p>
+              <div class="card-tags-list">
+                <span>Figma</span>
+                <span>UI/UX</span>
+                <span>Design Tokens</span>
+                <span>Prototyping</span>
+              </div>
+              <div class="card-clean-footer">
+                <a href="#projects" class="card-link-btn primary-link">
+                  <span>Figma File</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#projects" class="card-link-btn ghost-link">
+                  <i class="fa-regular fa-file-lines"></i> <span>Case Study</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Data Analyst -->
+          <div class="project-clean-card glass-panel" data-category="da">
+            <div class="card-thumb-banner banner-da">
+              <span class="thumb-badge">Business Intel</span>
+              <div class="thumb-icon"><i class="fa-solid fa-chart-line"></i></div>
+            </div>
+            <div class="card-clean-body">
+              <span class="card-category-label cat-da">Data Analytics</span>
+              <h3 class="card-project-title">Executive KPI &amp; Revenue Hub</h3>
+              <p class="card-project-desc">
+                Interactive analytical dashboard analyzing 100K+ transactional records, tracking revenue velocity, and visualizing churn risk.
+              </p>
+              <div class="card-tags-list">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Tableau</span>
+                <span>Pandas</span>
+              </div>
+              <div class="card-clean-footer">
+                <a href="#projects" class="card-link-btn primary-link">
+                  <span>Dashboard</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#projects" class="card-link-btn ghost-link">
+                  <i class="fa-solid fa-chart-pie"></i> <span>Insights</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: SWE -->
+          <div class="project-clean-card glass-panel" data-category="swe">
+            <div class="card-thumb-banner banner-swe">
+              <span class="thumb-badge">Interactive App</span>
+              <div class="thumb-icon"><i class="fa-solid fa-gamepad"></i></div>
+            </div>
+            <div class="card-clean-body">
+              <span class="card-category-label cat-swe">Software Engineering</span>
+              <h3 class="card-project-title">Retro Pastel Arcade Engine</h3>
+              <p class="card-project-desc">
+                Custom canvas game engine with synthesized Web Audio soundscapes, physics calculations, and responsive controls.
+              </p>
+              <div class="card-tags-list">
                 <span>JavaScript</span>
                 <span>Canvas API</span>
                 <span>Web Audio</span>
+                <span>CSS3</span>
               </div>
-              <div class="project-links">
-                <a href="#" class="project-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-                <a href="#" class="project-btn-ghost"><i class="fa-brands fa-github"></i> Code</a>
+              <div class="card-clean-footer">
+                <a href="#projects" class="card-link-btn primary-link">
+                  <span>Play Online</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://github.com/christinaperera" target="_blank" rel="noopener noreferrer" class="card-link-btn ghost-link">
+                  <i class="fa-brands fa-github"></i> <span>Source</span>
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- Project 3 -->
-          <div class="project-card glass-panel">
-            <div class="project-thumb project-thumb-3">
-              <div class="project-tag">E-Commerce</div>
+          <!-- Card 5: Visual Design -->
+          <div class="project-clean-card glass-panel" data-category="vd">
+            <div class="card-thumb-banner banner-vd">
+              <span class="thumb-badge">Mobile UI</span>
+              <div class="thumb-icon"><i class="fa-solid fa-mobile-screen"></i></div>
             </div>
-            <div class="project-body">
-              <h3>Aesthetic Goods Boutique</h3>
-              <p>Curated storefront featuring smooth transitions, cart drawer state management, and an effortless checkout experience.</p>
-              <div class="project-stack">
-                <span>Vue.js</span>
-                <span>CSS Grid</span>
-                <span>Stripe</span>
+            <div class="card-clean-body">
+              <span class="card-category-label cat-vd">Visual Design</span>
+              <h3 class="card-project-title">Aesthetic Goods Mobile UI</h3>
+              <p class="card-project-desc">
+                Whimsical e-commerce mobile concept focusing on frictionless cart transitions, pastel aesthetics, and haptic feedback design.
+              </p>
+              <div class="card-tags-list">
+                <span>Figma</span>
+                <span>iOS Design</span>
+                <span>Interaction</span>
+                <span>Motion UI</span>
               </div>
-              <div class="project-links">
-                <a href="#" class="project-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-                <a href="#" class="project-btn-ghost"><i class="fa-brands fa-github"></i> Code</a>
+              <div class="card-clean-footer">
+                <a href="#projects" class="card-link-btn primary-link">
+                  <span>Prototype</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#projects" class="card-link-btn ghost-link">
+                  <i class="fa-solid fa-layer-group"></i> <span>Mockups</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Data Analyst -->
+          <div class="project-clean-card glass-panel" data-category="da">
+            <div class="card-thumb-banner banner-da">
+              <span class="thumb-badge">Predictive ML</span>
+              <div class="thumb-icon"><i class="fa-solid fa-chart-pie"></i></div>
+            </div>
+            <div class="card-clean-body">
+              <span class="card-category-label cat-da">Data Analytics</span>
+              <h3 class="card-project-title">User Retention Cohort Model</h3>
+              <p class="card-project-desc">
+                Machine learning pipeline identifying customer retention segments and forecasting lifetime engagement with statistical tests.
+              </p>
+              <div class="card-tags-list">
+                <span>Python</span>
+                <span>Scikit-Learn</span>
+                <span>Jupyter</span>
+                <span>Matplotlib</span>
+              </div>
+              <div class="card-clean-footer">
+                <a href="#projects" class="card-link-btn primary-link">
+                  <span>Notebook</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#projects" class="card-link-btn ghost-link">
+                  <i class="fa-solid fa-file-lines"></i> <span>Report</span>
+                </a>
               </div>
             </div>
           </div>
