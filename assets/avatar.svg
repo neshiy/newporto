@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eeddfc"/>
+      <stop offset="50%" stop-color="#dfc5fc"/>
+      <stop offset="100%" stop-color="#c4a5f8"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffebe0"/>
+      <stop offset="100%" stop-color="#fed6c6"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b2d54"/>
+      <stop offset="60%" stop-color="#2d1d44"/>
+      <stop offset="100%" stop-color="#1b0e2b"/>
+    </linearGradient>
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background aesthetic shapes -->
+  <rect width="500" height="600" rx="28" fill="url(#bgGrad)"/>
+  <circle cx="250" cy="270" r="180" fill="#ffffff" opacity="0.35" filter="url(#softGlow)"/>
+  
+  <!-- Sparkles in background -->
+  <path d="M100,120 Q100,150 70,150 Q100,150 100,180 Q100,150 130,150 Q100,150 100,120" fill="#ffffff" opacity="0.8"/>
+  <path d="M400,160 Q400,180 380,180 Q400,180 400,200 Q400,180 420,180 Q400,180 400,160" fill="#ffffff" opacity="0.9"/>
+  <path d="M380,420 Q380,440 360,440 Q380,440 380,460 Q380,440 400,440 Q380,440 380,420" fill="#ffffff" opacity="0.7"/>
+
+  <!-- Back Hair -->
+  <path d="M140,240 C120,380 130,480 160,520 C200,530 300,530 340,520 C370,480 380,380 360,240 C340,120 160,120 140,240 Z" fill="url(#hairGrad)"/>
+
+  <!-- Neck & Shoulders -->
+  <path d="M215,330 L215,380 C215,395 285,395 285,380 L285,330 Z" fill="url(#skinGrad)"/>
+  <path d="M110,540 C110,430 190,410 215,390 C235,420 265,420 285,390 C310,410 390,430 390,540 C390,580 110,580 110,540 Z" fill="url(#shirtGrad)"/>
+
+  <!-- Head/Face -->
+  <ellipse cx="250" cy="275" rx="75" ry="95" fill="url(#skinGrad)"/>
+
+  <!-- Front Hair Style -->
+  <path d="M170,240 C170,170 200,145 250,145 C300,145 330,170 330,240 C330,270 320,290 315,310 C300,240 270,225 250,225 C220,225 190,245 185,310 C180,290 170,270 170,240 Z" fill="url(#hairGrad)"/>
+  
+  <!-- Left Side Bang strand -->
+  <path d="M175,235 C170,290 175,360 190,410 C182,370 178,310 185,250 Z" fill="#2d1d44"/>
+  <!-- Right Side Bang strand -->
+  <path d="M325,235 C330,290 325,360 310,410 C318,370 322,310 315,250 Z" fill="#2d1d44"/>
+
+  <!-- Cute Eyes -->
+  <ellipse cx="220" cy="270" rx="9" ry="12" fill="#281a38"/>
+  <circle cx="218" cy="266" r="3.5" fill="#ffffff"/>
+  <ellipse cx="280" cy="270" rx="9" ry="12" fill="#281a38"/>
+  <circle cx="278" cy="266" r="3.5" fill="#ffffff"/>
+
+  <!-- Eyebrows -->
+  <path d="M208,252 Q220,246 232,250" stroke="#3b2d54" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M268,250 Q280,246 292,252" stroke="#3b2d54" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Blush -->
+  <ellipse cx="205" cy="290" rx="14" ry="7" fill="#f472b6" opacity="0.45"/>
+  <ellipse cx="295" cy="290" rx="14" ry="7" fill="#f472b6" opacity="0.45"/>
+
+  <!-- Nose & Smile -->
+  <path d="M247,285 Q250,290 253,285" stroke="#e0a996" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M236,310 Q250,324 264,310" stroke="#b04f76" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Cute Lavender Earring -->
+  <circle cx="174" cy="295" r="5" fill="#c084fc"/>
+  <circle cx="326" cy="295" r="5" fill="#c084fc"/>
+
+  <!-- Necklace with heart pendant -->
+  <path d="M230,380 Q250,395 270,380" stroke="#fbcfe8" stroke-width="2" fill="none"/>
+  <path d="M250,395 C248,392 244,392 244,395 C244,398 250,402 250,402 C250,402 256,398 256,395 C256,392 252,392 250,395 Z" fill="#ec4899"/>
+</svg>
